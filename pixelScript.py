@@ -3,17 +3,17 @@ import requests
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+order_id = 1
+order_amount = 10
+
 test_adv1_body = 'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png'
-test_adv1_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={{order_id}}&value={{order_ammount}}'
-
+test_adv1_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={order_id}&value={order_amount}'
 test_adv2_body = 'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png'
-test_adv2_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={{order_id}}&value={{order_ammount}}'
-
+test_adv2_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={order_id}&value={order_amount}'
 test_adv3_body = 'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png'
-test_adv3_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={{order_id}}&value={{order_ammount}}'
-
+test_adv3_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={order_id}&value={order_amount}'
 test_adv4_body = 'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png'
-test_adv4_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={{order_id}}&value={{order_ammount}}'
+test_adv4_attr = f'https://listen.audiohook.com/08d79951-1908-4f0f-91aa-40eee5ac0e3f/pixel.png?order={order_id}&value={order_amount}'
 
 THREAD_POOL = 16
 
